@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="signup-box">
+    <h1>Sign Up</h1>
+    <h4>Ücretsiz Kaydolun!</h4>
+    <form>
+        <label>Ad</label>
+        <input id="SignInAd" type="text" placeholder="">
+        <label>Soyad</label>
+        <input id="SignInSoyad" type="text" placeholder="">
+        <label>Email</label>
+        <input id="SignInEmail" type="text" placeholder="">
+        <label>Username</label>
+        <input id="SignInUsername" type="text" placeholder="">
+        <label>Password</label>
+        <input id="SignInPassword" type="text" placeholder="">
+        <label>Confirm Password</label>
+        <input id="SignInPasswordConf" type="text" placeholder="">
+        <div id="conferr" style="display:none">Şifreler uyuşmuyor!</div>
+        <input onclick="SignUp()" type="button" value="Kaydet">
+    </form>
+    <p> Sign Up butonuna tıkladığında koşullarımızı kabul etmiş olursun.</p>
+</div>
+<p class="para-2">Mevcut hesabın var mı? <a href="Login"> Login Here</a></p>
+
+<script src="~/js/SignUp.js"></script>

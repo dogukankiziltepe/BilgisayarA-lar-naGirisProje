@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-box">
+    <h1>Login</h1>
+    <form>
+        <label>Email</label>
+        <input id="loginEmail" type="email" placeholder="">
+        <label>Password</label>
+        <input id="loginPassword" type="password" placeholder="">
+        <input onclick="Login()" type="button" value="Giriş Yap">
+    </form>
+</div>
+<p class="para-2">Hesabın yok mu? <a href="Register"> Buradan Kaydol</a></p>
+<script src="~/js/Login.js"></script>
